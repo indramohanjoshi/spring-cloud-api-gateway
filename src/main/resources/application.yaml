@@ -16,7 +16,5 @@ spring:
           predicates:
             - Path=/book/**
 
-eureka:
-  client:
-    service-url:
-      default-zone: http://localhost:8761/eureka           #Register with Eureka
+  config:
+    import: configserver:http://localhost:7000
